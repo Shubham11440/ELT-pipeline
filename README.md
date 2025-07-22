@@ -73,17 +73,17 @@ Example config files:
 
       config/destination_db_config.yaml
 
-Set Up dbt:
+## 3. Set Up dbt:
 
       Go to the elt/dbt_project/ directory.
 
 Update profiles.yml for your DB connection.
 
-Build Docker Containers:
+## 4. Build Docker Containers:
 
      docker-compose up --build
 
-Run the Pipeline:
+## 5. Run the Pipeline:
 
 Manually:
 
@@ -93,7 +93,7 @@ Or schedule it using a cron job:
 
       0 2 * * * /usr/bin/python3 /path/to/ELT-pipeline/run_pipeline.py
 
-Stop & Clean Up:
+## 6. Stop & Clean Up:
 
       docker-compose down -v
 
